@@ -1,7 +1,7 @@
 
 <div class="links">
   <a href="feature_tracker.html">Features</a><a href="doc_index.html">Documentation</a><a href="specs/detailed_spec_sandbox.html">Specs</a><a href="contact.html">Contact</a>
-</div>
+
     <h2>Benefits</h2>
     <ul>
       <li>Non-cloud version that runs on a server at a company, therefore keeping all the data in-house.</li>
