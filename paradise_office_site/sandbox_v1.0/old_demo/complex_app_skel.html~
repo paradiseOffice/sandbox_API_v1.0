@@ -69,7 +69,9 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 	<div class="clearfix">
 	<div class="window">
 		<div id="viewport" class="viewport" contenteditable>
-
+                 <!-- <iframe id="docTitle" class="document" src="test.html" seamless="seamless">
+                  
+                  </iframe>-->
 		</div>
 		<div class="toolbox">
                   <table id="1st-toolbox">

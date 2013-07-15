@@ -6,7 +6,8 @@ $('body').ready(function() {
         .delay(200)
         .show(800)
         .delay(5000)
-        .hide(600);
+        .hide(600)
+        .stop(true, true);
       }); /* showing the sub menus, which all have a class of menuBody */
     
       $(document).click ( function() {
