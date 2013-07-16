@@ -1824,7 +1824,14 @@
 
   </div>
 
+<!-- Twitter side bar -->
+  <div class="side-bar">
+    <div id="twitter">
+      <a class="twitter-timeline"  href="https://twitter.com/LinuxParadise"  data-widget-id="329337511023345665">Tweets by @LinuxParadise</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+    </div>
+  </div>
 </div><!-- content -->
 <div class="footer">
   <p>All content made by Hazel Windle &copy;, 2013.</p>

@@ -1,30 +1,23 @@
-<html>
-<head>
-  <title>Software Requirements Specification - Sandbox</title>
 
-  <link rel="stylesheet" type="text/css" ref="spec.css" />
-</head>
-<body class="spec" id="sandbox">
+<title>Software Requirements Specification - Sandbox</title>
 
-<div class="header">
-  <p class="printHeader">Paradise Sandbox and Cygnet</p>
-</div>
 
+<body>
+<p>Paradise Sandbox and Cygnet version 1.0</p>
 <div id="titlePage">
-  <h1>Paradise Sandbox API</h1> <h2>Specification</h2>
-  <h3>Hazel Windle</h3>
+	<h1>Paradise Sandbox API</h1>
+	<h2>Specification</h2>
+	<h3>Hazel Windle</h3>
 </div>
 
-<div class="links">
+  <a href="sandbox_v1.0_intro.html" target="_blank">Introduction</a>
+  <a href="specs/sandbox_v1.0_arch.html" target="_blank">Architecture</a>
+  <a href="specs/sandbox_v1.0_pols.html" target="_blank">Policies</a> 
+  <a href="specs/sandbox_v1.0_design.html" target="_blank">System Design</a> 
+  <a href="sandbox_v1.0_details.html" target="_blank">Sub
+System Design</a> 
 
-</div>
-
-
-<script type="text/JavaScript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-</script>
-<script type="text/JavaScript">
-</script>
-
-</body>
-</html>
+<script SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></SCRIPT><SCRIPT></SCRIPT><BR>
+</P>
+</BODY>
+</HTML>

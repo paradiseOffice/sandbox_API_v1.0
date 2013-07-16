@@ -4,7 +4,7 @@
     font-family: links-font;
     src: url('../images/fonts/Anonymous_Pro_B.ttf');
 }
-a.masthead { border: 0; text-decoration: none; }
+a.masthead { border: 0; text-decoration: none;}
 
 body {
  margin: 0;
