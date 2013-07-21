@@ -1,6 +1,10 @@
 <?php
   $errors = '';
   $ouremail = 'lead-dev@linux-paradise.co.uk';
+  $system = $_POST['system'];
+  $os = $_POST['os'];
+  $browser = $_POST['browser'];
+
   if(
     empty($_POST['system']) ||
     empty($_POST['os']) ||
@@ -13,7 +17,7 @@
 }
  
 $email = strtolower($_POST['email']);
-$subject .= "$system, $os, $browser: $_POST['subject']";
+$subject .= "{$system}, {$os}, {$browser}: {$_POST['subject']}";
 $body = trim($_POST['body']);
  
 if (!preg_match(
@@ -32,7 +36,6 @@ mail($to,$subject,$body,$headers);
 header('Location: ../contact.html');
 
 ?>
-<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

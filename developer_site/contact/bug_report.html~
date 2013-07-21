@@ -1,37 +1,4 @@
-<?php
-  $errors = '';
-  $ouremail = 'lead-dev@linux-paradise.co.uk';
-  if(
-    empty($_POST['system']) ||
-    empty($_POST['os']) ||
-    empty($_POST['browser']) ||
-    empty($_POST['email'])  ||
-     empty($_POST['subject']) ||
-    empty($_POST['body']))
-{
-    $errors .= "\n Please fill in all fields.";
-}
- 
-$email = strtolower($_POST['email']);
-$subject .= "{$system}, {$os}, {$browser}: {$_POST['subject']}";
-$body = trim($_POST['body']);
- 
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
-$to = $ouremail;
-$headers = "From: $email\n";
-$headers .= "Reply-To: $ouremail";
- 
-mail($to,$subject,$body,$headers);
- 
-//redirect to the 'contact' page
-header('Location: ../contact.html');
-
-?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -66,7 +33,7 @@ header('Location: ../contact.html');
 <div class="content">
 
   <div class="main-content">
-  <div id="main_content">
+  
     <h2>Bug Reporting</h2>
     <form action="http://www.linux-paradise.co.uk/contact/bug_report_process.php" method="POST">
     <fieldset id="details">
@@ -103,7 +70,6 @@ header('Location: ../contact.html');
     <input type="text" name="email" id="email" placeholder="someone@example.com" />
     <label for="subject">Title</label>
     <input type="text" name="subject" id="subject" placeholder="Problem..." />
-    
       <label for="body">Problem</label><textarea name="body" id="body" placeholder="Include screen size even if in inches/cm. Type problem details into here"></textarea>
       <input type="button" name="send-button" id="send-button" value="Send" />
     </form>

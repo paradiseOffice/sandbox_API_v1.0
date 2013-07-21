@@ -1,8 +1,8 @@
 #!/usr/bin/python3.3
 # Stub function
 
-class Web_address:
+class Email_address:
 
 
-  def mend_address(data):
+  def mend_email(data):
     print("Stub method")
