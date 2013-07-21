@@ -1,0 +1,7 @@
+#!/usr/bin/python3.3
+# Stub function
+
+class Web_address:
+
+
+def web_address(data):
