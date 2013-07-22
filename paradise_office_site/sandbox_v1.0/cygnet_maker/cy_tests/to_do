@@ -1,0 +1,41 @@
+cy_data_validation
+	- web address*
+	- email address *
+	- long text*
+	- currency*
+	- integer*
+	- float*
+	- date*
+	- month and year*
+	- month*
+	- day*
+	- year*
+	- datetime
+	- time
+	- short text
+	- uk phone no
+	- us phone no
+	- international phone no
+	- national insurance
+	- social security
+	- credit card num
+	- credit card cvv num
+	- custom card num
+	- post code
+	- zip code
+
+cy_reader
+	- syntax checker
+	- valid commands
+	- valid arguments
+	- caller to the writer
+	- program meta information
+
+cy_writer
+	- copy html
+	- copy css (sep files)
+	- copy javascript
+	- link in py files
+	- copy php
+	- include php javascript
+	- write meta info as xml
