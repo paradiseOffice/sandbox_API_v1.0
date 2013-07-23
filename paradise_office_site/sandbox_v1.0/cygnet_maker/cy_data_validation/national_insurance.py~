@@ -1,0 +1,7 @@
+#!/usr/bin/python3.3
+# Stub function
+
+class NationalInsurance:
+
+  def check_ni_num(data):
+    print("NI number stub method")

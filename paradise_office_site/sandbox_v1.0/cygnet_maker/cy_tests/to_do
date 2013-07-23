@@ -10,17 +10,19 @@ cy_data_validation
 	- month*
 	- day*
 	- year*
-	- datetime
-	- time
-	- short text
-	- uk phone no
-	- us phone no
-	- international phone no
-	- national insurance
-	- social security
-	- credit card num
-	- credit card cvv num
-	- custom card num
+	- datetime*
+	- time*
+	- short text*
+	- uk phone no*
+	- uk mobile no*
+	- us phone no*
+	-us mobile no*
+	- international phone no*
+	- national insurance*
+	- social security*
+	- credit card num*
+	- credit card cvv num*
+	- custom card num*
 	- post code
 	- zip code
 

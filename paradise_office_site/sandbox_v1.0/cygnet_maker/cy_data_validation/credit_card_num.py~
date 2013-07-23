@@ -1,0 +1,7 @@
+#!/usr/bin/python3.3
+# Stub function
+
+class SocialSecurity:
+
+  def check_ss_num(data):
+    print("Social security number stub method")
