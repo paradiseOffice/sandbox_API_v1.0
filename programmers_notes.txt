@@ -1,0 +1,6 @@
+Hazel's notes
+
+2013-07-23
+- Use PHP add slashes and trim on all input fields, text areas etc. 
+
+2013-07-24
