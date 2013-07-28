@@ -12,10 +12,30 @@ class ZipCodeTestCase(unittest.TestCase):
     self.code = ZipCode.check_zipcode("")
 
   # Zips are 5 nums, with optional - and 4 nums. No letters
+  def test_vbad(self):
+    self.code = ZipCode.check_zipcode("oyhgegs")
+    correct_code = ""
+    self.assertEqual( correct_code, self.code)
+
+  def test_bad(self):
+    self.code = ZipCode.check_zipcode("^89623y8o")
+    correct_code = ""
+    self.assertEqual( correct_code, self.code)
+
+  def test_middle(self):
+    self.code = ZipCode.check_zipcode("9-8  201")
+    correct_code = "98201"
+    self.assertEqual( correct_code, self.code)
+
+  def test_good(self):
+    self.code = ZipCode.check_zipcode("90231-9023")
+    correct_code = "90231-9023"
+    self.assertEqual( correct_code, self.code)
+
 
   def tearDown(self):
-    self.real = ""
-    correct_real = 0.0
+    self.code = ""
+    correct_code = 0.0
 
 if __name__ == '__main__':
   unittest.main()

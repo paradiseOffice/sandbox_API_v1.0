@@ -7,14 +7,22 @@
 <?xml version="1.0" encoding="utf-8"?>
   <program>
     <meta-information>
-      <app_info name="Simple Word Processor" 
-		description="Edit and create short texts." 
-		creation_date="20130724" modified="20130727"       
-      />
-      <author_info name="Hazel Windle" 
-email="lead-dev@linux-paradise.co.uk" company="Paradise Software" />
-      <security method="md5" link"x.md5" 
-originating_domain="http://www.paradise-office.co.uk" />
+      <app_info>
+	<name>Simple Word Processor</name>
+	<description>Edit and create short texts.</description>
+	<created date="20130724" />
+	<modified date="20130727" />
+	</app_info>
+      <author_info> 
+	<name>Hazel Windle</name>
+	<email>lead-dev@linux-paradise.co.uk</email>
+	<company>Paradise Software</company>
+      </author_info>
+      <security> 
+	<encryption method="md5" />
+	<keyfile link="x.md5" />
+	<originating domain="http://www.paradise-office.co.uk" />
+      </security>
       <language locale="en-gb" text="en-gb" direction="ltr" />
     </meta-information>
 
@@ -31,14 +39,15 @@ originating_domain="http://www.paradise-office.co.uk" />
 
     <layout type="tablet" effects="animation">
       <menu_bar no_of_menus="5">
-        <menu name="File">
-	  <menu_item name="New File" command="new" />
-	  <menu_item name="Open" command="open_file" dialog_type="modal" />
-	  <menu_item name="Save" command="save_file" dialog_type="modal" />
-	  <menu_item name="Save As" command="save_as_dl" dialog_type="modal" />
-	  <menu_item name="Convert File" command="convert_file" dialog_type="modal" />
-	  <menu_item name="Print" command="print" dialog_type="modal" />
-	  <menu_item name="Close File" command="close_file" dialog_type="confirm" />
+        <menu name="File" acckey="F">
+	  <menu_item name="New File" acckey="Ctrl + N" command="new" />
+	  <menu_item name="Open" acckey="Ctrl + O" command="open_upload" opens_dialog="system_upload" />
+	  <menu_item name="Save" acckey="Ctrl + S" command="save_download" opens_dialog="system_download" />
+	  <menu_item name="Save As" acckey="Ctrl Shift + A" command="save_as_dl" opens_dialog="dialog_saveas.xml" />
+	  <menu_item name="Convert File" command="convert_bfile" opens_dialog="dialog_convert.xml" />
+	  <menu_item name="Print Preview" command="print_view" opens_dialog="dialog_print_preview.xml" />
+	  <menu_item name="Print" acckey="Ctrl + P" plugin="print" opens_dialog="system_print" />
+	  <menu_item name="Close File" acckey="Ctrl + W" command="close_file" opens_dialog="dialog_confirm.xml" />
         </menu>
         <menu name="View">
 	  <sub_menu name="Zoom >">
