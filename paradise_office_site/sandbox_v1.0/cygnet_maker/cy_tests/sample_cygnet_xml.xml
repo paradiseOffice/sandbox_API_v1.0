@@ -7,6 +7,7 @@
 <?xml version="1.0" encoding="utf-8"?>
   <program>
     <meta-information>
+
       <app_info>
 	<name>Simple Word Processor</name>
 	<description>Edit and create short texts.</description>
@@ -24,6 +25,13 @@
 	<originating domain="http://www.paradise-office.co.uk" />
       </security>
       <language locale="en-gb" text="en-gb" direction="ltr" />
+
+      <author>Hazel Windle</author>
+      <program_name>simple_word_processor</program_name>
+      <company>Paradise Software</company>
+      <version>0.1</version>
+      <date created="today" modified="2013-07-24" />
+
     </meta-information>
 
     <formats>
@@ -39,6 +47,7 @@
 
     <layout type="tablet" effects="animation">
       <menu_bar no_of_menus="5">
+
         <menu name="File" acckey="F">
 	  <menu_item name="New File" acckey="Ctrl + N" command="new" />
 	  <menu_item name="Open" acckey="Ctrl + O" command="open_upload" opens_dialog="system_upload" />
@@ -149,3 +158,67 @@
       </status_bar>
     </layout>
   </program>
+
+        <menu name="File">
+	  <menu_item name="New File" command="new" />
+	  <menu_item name="Open" command="open_file" dialog_type="modal" />
+	  <menu_item name="Save" command="save_file" dialog_type="modal" />
+	  <menu_item name="Save As" command="save_as_dl" dialog_type="modal" />
+	  <menu_item name="Convert File" command="convert_file" dialog_type="modal" />
+	  <menu_item name="Print" command="print" dialog_type="modal" />
+	  <menu_item name="Close File" command="close_file" dialog_type="confirm" />
+        </menu>
+        <menu name="View">
+	  <sub_menu name="Zoom >">
+	    <menu_item name="10%" plugin="zoom_page" plugin_options="10" />
+	    <menu_item name="25%" plugin="zoom_page" plugin_options="25" />
+	    <menu_item name="50%" plugin="zoom_page" plugin_options="50" />
+	    <menu_item name="fit width" plugin="zoom_page" plugin_options="fit width" />
+	    <menu_item name="100%" plugin="zoom_page" plugin_options="100" />
+	    <menu_item name="125%" plugin="zoom_page" plugin_options="125" />
+	    <menu_item name="150%" plugin="zoom_page" plugin_options="150" />
+          </sub_menu>
+	  <menu_item name="Show Formatting Marks" plugin="show_special_chars" plugin_options="wp" />
+	  <menu_item name="Print preview" command="print_preview" dialog_type="modal" />
+        </menu>
+	<menu name="Insert">
+	  <menu_item name="Breaks" dialog_type="modal" />
+	  <menu_item name="Table" dialog_type="non-modal" />
+	  <menu_item name="Special Character" plugin="show_special_chars" dialog_type="modal" />
+	  <menu_item name="Picture" plugin="insert_pic" dialog_type="modal" />
+	  <menu_item name="Text file" command="open_file" dialog_type="modal" />
+	</menu>
+	<menu name="Format">
+	  <menu_item name="Font" command="font_preview" dialog_type="modal" />
+	  <menu_item name="Paragraph" dialog_type="modal" />
+	  <menu_item name="Text frame" dialog_type="modal" />
+	  <menu_item name="Picture" dialog_type="modal" />
+	  <menu_item name="Page" dialog_type="modal" />
+	</menu>
+	<menu name="Help">
+	  <menu_item name="About" dialog_type="non-modal" />
+	</menu>
+      </menu_bar>
+      <command_bar>
+	<large_icon name="Encyclopedia" plugin="wiki-research" icon-pic="book.png" />
+	<large_icon name="Choose font" plugin="pick_font" />
+	<large_icon name="Insert table" plugin="quick_table" />
+	<large_icon name="Check word" plugin="lookup_word" plugin_options="definition" />
+      </command_bar>
+      <tool_pane>
+	<tool_box>
+	  <icon name="Bold" plugin="text_bold" />
+	</tool_box>
+        <message_box>
+	  
+	</message_box>
+      </tool_pane>
+      <file_port type="file" />
+
+      <dialog name="Open File" called_by="menu_item[name: Open]">
+
+      </dialog>
+
+    </layout>
+  </program>
+
